@@ -1,9 +1,8 @@
-function add(a: number, b: number): number {
-    return a + b;
-}
-console.log(add(5, 3));
+function calculate(): void {
+    let num1 = document.getElementById("num1") as HTMLInputElement;
+    let num2 = document.getElementById("num2") as HTMLInputElement;
+    let result = document.getElementById("result") as HTMLParagraphElement;
 
-function subtract(a: number, b: number): number{
-    return a - b;
+    let sum = add(Number(num1.value), Number(num2.value));
+    result.innerText = `Result: ${sum}`;
 }
-    console.log(subtract(5, 3));
